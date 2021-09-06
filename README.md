@@ -4,7 +4,7 @@ Final project for the data incites group - University of Toronto Data Analytics 
 ### Segment 1 Deliverable:
 
 **Role - Triangle:**  Create a mockup of a machine learning model mockup and explain how it will work with the rest of the project steps.
--  A provisional machine learning model and a mockup of a machine learning model can be accessed 
+-  A provisional machine learning model and a mockup of a machine learning model were created for deliverable 1. 
 
 
 #### Machine learning model creation:
