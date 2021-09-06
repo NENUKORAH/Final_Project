@@ -1,4 +1,4 @@
--- Create
+-- Create table
 -- Tesla price history table
 CREATE TABLE price_history (
  hdate DATE NOT NULL,
