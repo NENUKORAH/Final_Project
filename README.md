@@ -4,14 +4,14 @@ Final project for the data incites group - University of Toronto Data Analytics 
 ### Segment 1 Deliverable:
 
 **Role - Triangle:**  Create a mockup of a machine learning model mockup and explain how it will work with the rest of the project steps.
--  A provisional machine learning model and a mockup of a machine learning model were created *"Machine_Learning/Notebook"*.
+-  A provisional machine learning model and a mockup of a linear regression model were created *"Machine_Learning/Notebook"*.
 
 
 #### Machine learning model creation:
    
 - We first reviewed the data on Kaggle website to assess the data characteristics.
 
-- We will load the data into a Pandas’ DataFrame for the Linear Regression model from a PostgreSQL database.
+- We will load the data into a Pandas’ DataFrame from a PostgreSQL database.
 
 - After data preprocessing, we will train a simple linear regression model using moving average as a predictor for the closing price.
 
