@@ -34,3 +34,9 @@ Role - Circle -> Database Design and Mockup
 - With the database setup and available, we can now test everything using the CRUD concept reviewed during our course lectures. The file called "CRUD.txt" contains the SQL scripts that were developed to verify proper testing by CRUD functions. Below is a screen capture showing the final part of the delete process, however, each aspect of CRUD contains a test feature.
 
 ![Image2](images/CRUD_Test.png)
+
+## Connection to Machine Learning Model
+
+- Also the machine learning model does connect to the database properly, please see screen capture below showing records returned from a query. The code is contained in the "Provisional_machine_learnin_model" jupyter file in the repository for your reference.
+
+![Image3](images/DB_connect_read.png)
