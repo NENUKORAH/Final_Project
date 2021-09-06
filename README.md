@@ -1,18 +1,17 @@
-# Final_Project
+# Final_Project - Data Incites
 Final project for the data incites group - University of Toronto Data Analytics Bootcamp 
 
-## Group : Data Incites
+### Segment 1 Deliverable:
 
-## Segment 1 Deliverable
+**Role - Triangle:**  Create a mockup of a machine learning model mockup and explain how it will work with the rest of the project steps.
+-  A provisional machine learning model and a mockup of a machine learning model can be accessed 
 
-**Role - Triangle:**  Create a mockup of a machine learning model mockup adn explain hw it will work with teh rest of teh project steps.
 
-
-### Machine learning model creation:
+#### Machine learning model creation:
    
-- The first review of the data was done on Kaggle website to assess the data characteristics.
+- We first reviewed the data on Kaggle website to assess the data characteristics.
 
-- We will load the data into a Pandas’ DataFrame for the Linear Regression model from PostgreSQL.
+- We will load the data into a Pandas’ DataFrame for the Linear Regression model from a PostgreSQL database.
 
 - After data preprocessing, we will train a simple linear regression model using moving average as a predictor for the closing price.
 
@@ -20,4 +19,6 @@ Final project for the data incites group - University of Toronto Data Analytics 
 
 - We will be using python and scikit-learn to present a provisional machine learning model that stands in for the final machine learning model.
 
-- This model will take data from the provisional database and output labels for input data.-
+- This model will take data from the provisional database and output labels for input data.
+
+
