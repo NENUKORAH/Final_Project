@@ -6,7 +6,7 @@ Final project of the data incites group - University of Toronto Data Analytics B
 
 The selected project topic for this group is **Stock price Predictor**
 
-**Data source**: [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) 
+**Data source**: [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) 
 
 **Google Slide Link**: [Presentation](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit?usp=sharing)
 
@@ -30,7 +30,7 @@ We had a tie on three projects, but decided to go with the stock price predictio
 
 ## Project Overview
 
-The purpose of this project is to analyse the stock price of Tesla and predict future pricing using moving averages, linear regression and machine learning.
+The purpose of this project is to analyse the stock price and revenue of Tesla to predict future pricing using moving averages, linear regression and machine learning.
 
 ### Reason for Project Idea
 
@@ -40,7 +40,9 @@ Secondly, the dataset mainly contains numerical values and it is easily readable
 
 Thirdly, the stock market is being considered as major investment portfolio by indiduals and businesses, the model developed in this analysis will help individuals and businesses in making a business decision.
 
-Finally, our passion for numerical analysis and data manipulation is a core reason for choosen this project idea.
+Fourthly, our passion for numerical analysis and data manipulation is a core reason for choosen this project idea.
+
+Finally, to understand teh relationship between Tesla revenue and stock prices.
 
 ### Question to be answered
 
@@ -48,11 +50,11 @@ Using machine learning algorithms we will train a regression model using histori
 
 What we seek to achieve with the data set is to identify trends in the stock market using charts and statistical figures.
 
-The model will help in making an investment decision.
+We would like to know if Tesla stock price will attain $3,000 a share in the near future as stated by Cathie Wood (Founder Ark Invest) in a recent [Interview](https://finance.yahoo.com/news/tesla-stock-is-worth-3000-ark-invests-cathie-wood-201139618.html).
 
 ### Data Source
 
-The source of data is obtained from kaggle [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020).
+The source of data is obtained from kaggle [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) and macro trends [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue)
 
 This data consists of 2416 rows and 7 columns with historical trading data from 2010 - 2020.
 
@@ -63,6 +65,8 @@ The columns Open and Close represent the starting and final price at which the s
 High, Low and Last represent the maximum, minimum, and last price of the share for the day.
 
 Trading volume is the number of shares bought or sold in the day.
+
+Tesla revenue data consist of quarterly Tesla revenue from 2010 - 2020.
 
 We will use Pandas to clean the dataset and perform an exploratory analysis.
 
@@ -80,13 +84,42 @@ We will be using python and scikit-learn to present a provisional machine learni
 
 This model will take data from the provisional database and output labels for input data.
 
-### Database
+The machine learning model is able to connect to the database properly. The code is contained in the "mlm.ipynb" jupyter file in the repository for your reference.
+
+### Database  
 
 For the purpose of this project, we will be using the AWS database and Postgres admin database to store the data.
 
 We will present a provisional database that stands for the final database which will store sample data and used for the machine learning model.
 
+### Database table Creation
+
+The table creation script is included in this folder and is called "table_create_script.sql". This script was loaded into a query window and executed against a PostgreSQL database named "tesla", which was manually created using the pgAdmin interface. 
+We can automate the full database creation using a script.
+
+### Table Attributes
+
+Below is a brief description of each attribute and this information is also contained in the "database_schema" file in this directory.
+
+* Date - this is the date of record
+* Open - opening price of stock
+* High - highest price recorded for that date
+* Low - lowest price recorded for that date
+* Close - closing price of stock
+* Adj Close - adjusted close in case of after hours trading
+* Volume - Amount of shares traded for that date
+
+### Sample Data and CRUD testing
+
+From the primary data downloaded from the kaggle site, the data was partitioned for a sample data set containing the top 100 rows from the actual source file including the header details. 
+As such, we will be using real values for testing and preliminary analysis. This data was loaded manually into the database using the import feature of pgAdmin once the table was created as mentioned above. 
+The name of the sample data file is called "tesla100.csv".
+
+With the database setup and available, we can now test everything using the CRUD concept reviewed during our course lectures. The file called "CRUD.txt" contains the SQL scripts that were developed to verify proper testing. 
+
 ### Technologies Utilized
+
+The following technologies will be utilized throughout the duration of this project;
 
 * Visual Code Studio
 * Python
@@ -110,3 +143,5 @@ We will present a provisional database that stands for the final database which 
 We will be presenting an interactive dashboard that shows our result at the end of the project.
 
 The final project result will be hosted on the web using plotly.
+
+A demo has been shown in the google slide presentation.
