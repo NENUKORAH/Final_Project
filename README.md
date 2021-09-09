@@ -7,7 +7,7 @@ Final project of the data incites group - University of Toronto Data Analytics B
 
 The selected project topic for this group is **Stock price Predictor**
 
-**Data source**: [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) 
+**Data source**: [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) , [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) 
 
 **Google Slide Link**: [Presentation](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit?usp=sharing)
 
@@ -47,7 +47,7 @@ Thirdly, the stock market is being considered as major investment portfolio by i
 
 Fourthly, our passion for numerical analysis and data manipulation is a core reason for choosen this project idea.
 
-Finally, to understand the relationship between Tesla revenue and stock prices.
+Finally, to understand the relationship between Tesla revenue, stock prices and Earning Per Share (EPS).
 
 ### Question to be answered
 
@@ -59,7 +59,7 @@ We would like to know if Tesla stock price will attain $3,000 a share in the nea
 
 ### Data Source
 
-The source of data is obtained from kaggle [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) and macro trends [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue)
+The source of data is obtained from kaggle [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) and macro trends [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue).
 
 This data consists of 2416 rows and 7 columns with historical trading data from 2010 - 2020.
 
@@ -72,6 +72,8 @@ High, Low and Last represent the maximum, minimum, and last price of the share f
 Trading volume is the number of shares bought or sold in the day.
 
 Tesla revenue data consist of quarterly Tesla revenue from 2010 - 2020.
+
+Tesla EPS data consist of quarterly Tesla revenue from 2010 - 2020.
 
 We will use Pandas to clean the dataset and perform an exploratory analysis.
 
