@@ -124,6 +124,12 @@ The name of the sample data file is called "tesla100.csv".
 
 With the database setup and available, we can now test everything using the CRUD concept reviewed during our course lectures. The file called "CRUD.txt" contains the SQL scripts that were developed to verify proper testing. 
 
+### Entity Relationship Diagram
+
+The diagram below shows the entity relationship model of the project dataset. 
+
+![ERD Final Project](https://user-images.githubusercontent.com/81701640/133124480-68d0269c-b285-40eb-8b16-0a0c40d83c99.png)
+
 ### Technologies Utilized
 
 The following technologies will be utilized throughout the duration of this project;
