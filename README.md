@@ -9,7 +9,11 @@ The selected project topic for this group is **Stock price Predictor**
 
 **Data source**: [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) , [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) 
 
-**Google Slide Link**: [Presentation](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit?usp=sharing)
+**Google Slide Links**
+
+[Dashboard Blueprint](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit?usp=sharing)
+
+[Presentation](https://docs.google.com/presentation/d/1FUG7G955AFw-W6SOV7qHsod4T7I4Npr5Js2dOtEmPR8/edit#slide=id.p)
 
 **Team Members**
 
