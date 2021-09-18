@@ -16,7 +16,9 @@ CREATE TABLE daily_values (
  hclose REAL,
  hadjclose REAL,	
  hvolume INT,
+ q_key VARCHAR(10),
  FOREIGN KEY (ticker) REFERENCES company (ticker_id),
+ FOREIGN KEY (q_key) REFERENCES common_values (q_id),
  PRIMARY KEY (ticker, hdate)
 );
 
@@ -52,4 +54,24 @@ CREATE TABLE yearly_values (
   shares INT,
   FOREIGN KEY (ticker) REFERENCES company (ticker_id),
   PRIMARY KEY (ticker, yyear)
+);
+
+-- Create Common Values Table
+CREATE TABLE common_values (
+  ticker VARCHAR(10) NOT NULL,
+  qDate DATE NOT NULL,
+  revenue REAL,
+  eps REAL,
+  net_income REAL,
+  gross_profit REAL,
+  operating_income REAL,
+  ebitda REAL,
+  shares INT,
+  quarter VARCHAR(4) NOT NULL,
+  qyear INT NOT NULL,
+  qlabel VARCHAR(10) NOT NULL,
+  share_price REAL,
+  q_id VARCHAR(10),
+  FOREIGN KEY (ticker) REFERENCES company (ticker_id),
+  PRIMARY KEY (q_id)
 );
