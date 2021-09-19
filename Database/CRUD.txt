@@ -1,0 +1,32 @@
+-- Create table
+-- Tesla price history table
+CREATE TABLE price_history (
+ hdate DATE NOT NULL,
+ hopen REAL,
+ hhigh REAL,
+ hlow REAL,
+ hclose REAL,
+ hadjclose REAL,	
+ hvolume INT,
+ PRIMARY KEY (hdate)
+);
+
+-- Read 
+-- Tesla price history table
+SELECT * FROM price_history
+ORDER BY hdate;
+
+-- Update 
+-- 1st row & display
+UPDATE price_history
+SET hvolume = 0
+WHERE hdate = '2010-06-29';
+SELECT * FROM price_history
+ORDER BY hdate;
+
+-- Delete 
+-- Dates less than Aug 2nd, 2010
+DELETE FROM price_history
+WHERE hdate < '2010-08-02';
+SELECT * FROM price_history
+ORDER BY hdate;
