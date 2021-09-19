@@ -7,9 +7,13 @@ Final project of the data incites group - University of Toronto Data Analytics B
 
 The selected project topic for this group is **Stock price Predictor**
 
-**Data source**: [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) , [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) 
+**Data source**: [Tesla Stock Price](https://finance.yahoo.com/quote/TSLA/history?p=TSLA) , [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) 
 
-**Google Slide Link**: [Presentation](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit?usp=sharing)
+**Google Slide Link**
+
+ [Presentation](https://docs.google.com/presentation/d/1FUG7G955AFw-W6SOV7qHsod4T7I4Npr5Js2dOtEmPR8/edit#slide=id.gf06cb6288e_0_5)
+
+ [Dashboard Blueprint](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit#slide=id.p)
 
 **Team Members**
 
@@ -59,7 +63,7 @@ We would like to know if Tesla stock price will attain $3,000 a share in the nea
 
 ### Data Source
 
-The source of data is obtained from kaggle [Tesla Stock Price](https://www.kaggle.com/timoboz/tesla-stock-data-from-2010-to-2020) and macro trends [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue).
+The source of data is obtained from yahoo finance [Tesla Stock Price](https://finance.yahoo.com/quote/TSLA/history?p=TSLA) and macro trends [Tesla Revenue](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue) , [Tesla EPS](https://www.macrotrends.net/stocks/charts/TSLA/tesla/revenue).
 
 This data consists of 2416 rows and 7 columns with historical trading data from 2010 - 2020.
 
@@ -91,7 +95,11 @@ We will be using python and scikit-learn to present a provisional machine learni
 
 This model will take data from the provisional database and output labels for input data.
 
-The machine learning model is able to connect to the database properly. The code is contained in the "mlm.ipynb" jupyter file in the repository for your reference.
+The target is closing stock price, the data split into training and test set (80, 20).
+
+Four models Autoregressive Integrated Moving Average (ARIMA), Facebook Prophet, Long short-term memory (LSTM) and Linear Regression will be used for the machine learning. 
+
+The model with the best result (magnitude of errors, accuracy) will be selected for final deployment.
 
 ### Database  
 
@@ -128,7 +136,7 @@ With the database setup and available, we can now test everything using the CRUD
 
 The diagram below shows the entity relationship model of the project dataset. 
 
-![ERD Final Project](https://user-images.githubusercontent.com/81701640/133124480-68d0269c-b285-40eb-8b16-0a0c40d83c99.png)
+![ERD Final Project](https://user-images.githubusercontent.com/81701640/133913727-4f35f369-2905-426c-84f6-8c9060a3149e.png)
 
 ### Technologies Utilized
 
