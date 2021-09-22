@@ -101,6 +101,22 @@ Four models Autoregressive Integrated Moving Average (ARIMA), Facebook Prophet, 
 
 The model with the best result (magnitude of errors, accuracy) will be selected for final deployment.
 
+### Linear Regression Model
+
+![Linear Regression ML](https://user-images.githubusercontent.com/81701640/134269180-939a6eb2-265c-4476-a1be-6013fc2ef350.png)
+
+### Long Short-Term Memory (LSTM)
+
+![LSTM ML](https://user-images.githubusercontent.com/81701640/134269310-68be9245-31ba-4dea-a1e3-07347c6d95a2.png) 
+
+### Autoregressive Integrated Moving Average (ARIMA) 
+
+![ARIMA ML](https://user-images.githubusercontent.com/81701640/134269341-07a43d4c-12c7-49c9-9f5f-077b35cd5972.png)
+
+### Facebook Prophet Model
+
+![FB prophet ML](https://user-images.githubusercontent.com/81701640/134269469-2d9e9868-4cd8-48e5-8383-1c7e46637643.png)
+
 ### Database  
 
 For the purpose of this project, we will be using the AWS database and Postgres admin database to store the data.
