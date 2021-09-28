@@ -1,0 +1,1 @@
+FLASK_APP=tesla_predict/app.py flask run
