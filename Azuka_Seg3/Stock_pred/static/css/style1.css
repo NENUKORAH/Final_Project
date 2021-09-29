@@ -1,0 +1,21 @@
+body {
+
+    color: black;
+   
+       background-color: rgb(32, 2, 48)
+       ;
+   
+     }
+   .jumbotron {
+       background-image: url("photo2.jpg");
+       background-size: cover;
+       
+       height: 100%;
+       text-align: center;
+       color:white;
+       /* text-decoration: underline; */
+       text-shadow: 2px 2px black;
+   };
+
+
+   
