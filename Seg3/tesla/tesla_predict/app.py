@@ -52,32 +52,36 @@ def send():
     return render_template("form.html")
 
 
-@app.route("/api/pals")
-def pals():
-    results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
+@app.route("/api/days")
+def days():
+    results = db.session.query(Day.hdate, Day.hopen, Day.hhigh, Day.hlow, Day.hclose, Day.hvolume).all()
 
     hover_text = [result[0] for result in results]
-    lat = [result[1] for result in results]
-    lon = [result[2] for result in results]
+    hdate = [result[1] for result in results]
+    hopen = [result[2] for result in results]
+    hhigh = [result[3] for result in results]
+    hlow = [result[4] for result in results]
+    hclose = [result[5] for result in results]
+    hvolume = [result[6] for result in results]
 
-    pet_data = [{
-        "type": "scattergeo",
-        "locationmode": "USA-states",
-        "lat": lat,
-        "lon": lon,
-        "text": hover_text,
-        "hoverinfo": "text",
-        "marker": {
-            "color": ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A', '#19D3F3', '#FF6692', '#B6E880', '#FF97FF', '#FECB52'],
-            "size": 15,
-            "line": {
-                "color": "rgb(8,8,8)",
-                "width": 1
-            },
-        }
-    }]
+    #day_data = [{
+    #    "type": "scattergeo",
+    #    "locationmode": "USA-states",
+    #    "lat": lat,
+    #    "lon": lon,
+    #    "text": hover_text,
+    #    "hoverinfo": "text",
+    #    "marker": {
+    #       "color": ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A', '#19D3F3', '#FF6692', '#B6E880', '#FF97FF', '#FECB52'],
+    #        "size": 15,
+    #        "line": {
+    #            "color": "rgb(8,8,8)",
+    #            "width": 1
+    #        },
+    #    }
+    #}]
 
-    return jsonify(pet_data)
+    return jsonify(day_data)
 
 
 if __name__ == "__main__":

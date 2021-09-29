@@ -1,7 +1,7 @@
 function buildPlot() {
 
     /* data route */
-  const url = "/api/pals";
+  const url = "/api/days";
   d3.json(url).then(function(response) {
 
     console.log(response);
