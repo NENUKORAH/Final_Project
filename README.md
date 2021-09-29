@@ -15,6 +15,8 @@ The selected project topic for this group is **Stock price Predictor**
 
  [Dashboard Blueprint](https://docs.google.com/presentation/d/1gQCpkDp3MEN7LO5x0zF8KAiiKE5SD2Ak3EJYs237JpY/edit#slide=id.p)
 
+ [Final Dashboard](https://teslastockpriceprediction.herokuapp.com/)
+
 **Team Members**
 
 * [Nnaemeka Enukorah](https://github.com/NENUKORAH)
@@ -116,6 +118,16 @@ The model with the best result (magnitude of errors, accuracy) will be selected 
 ### Facebook Prophet Model
 
 ![FB prophet ML](https://user-images.githubusercontent.com/81701640/134269469-2d9e9868-4cd8-48e5-8383-1c7e46637643.png)
+
+The null values were dropped, and date set as index in the preprocessing phase.
+
+The data was split 80:20 for testing and training.
+
+We selected the Facebook model because it is the only model that could predict stock prices for a longer term with an accuracy score of 80%.
+
+One major limitation of the model is that the accuracy score might not be as high as the other models.
+
+The main benefit of the facebook prophetmodel is that it factors seasonality in the modelling, it is also flexible and easy to use compared to the other models.
 
 ### Database  
 
