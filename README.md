@@ -27,8 +27,6 @@ The selected project topic for this group is **Stock price Predictor**
 
 * [Barnett Bullock](https://github.com/bnbullock)
 
-We have a private channel on slack where we update eachother on our individual assignment, and we also meet by 6.30pm before class via zoom meetings.
-
 ## Project Idea
 
 We highlighted 15 ideas to be considered as the final project for this group and casted votes to determine which project idea should be considered.
