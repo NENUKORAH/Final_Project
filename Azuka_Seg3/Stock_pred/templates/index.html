@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stock Prediction Dashboard</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head>
+
+<body>
+
+        
+    
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="blank200">
+				<!-- Blank Space -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1">
+			</div>
+			<div class="col-sm-10">
+				<center>
+					<h1 class="tagline", style="color:rgb(14, 212, 219);">Tesla Stock Price Prediction Dashboard</h1>
+				</center>
+			</div>			
+			<div class="col-sm-1">
+			</div>
+		</div>
+		<div class="row">
+			<div class="blank100">
+				<!-- Blank Space -->
+			</div>
+		</div>
+
+		
+
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<center>
+					<form class="contact1-form validate-form" action="/predict" method="POST" enctype="multipart/form-data">
+						<div class="wrap-input1 validate-input" data-validate="Company TICKER is required">
+							<input  autocomplete="off" class="input1" type="text" name="ticker" id="ticker" placeholder="TICKER : TSLA">
+							<span class="shadow-input1"></span>
+
+                            <input  autocomplete="off" class="input1" type="text" name="day" id="day" placeholder="No of days!">
+							<span class="shadow-input1"></span>
+						</div>
+						<div class="container-contact1-form-btn">
+							<button class="contact1-form-btn">
+								<span>Start<i class="" aria-hidden="true"></i></span>
+							</button>
+						</div>
+					</form>	
+					
+					
+				</center>
+			</div>
+			<div class="col-sm-2"></div>
+		
+			<div class="row">
+				<div class="blank100">
+					<!-- Blank Space -->
+				</div>
+			</div>
+
+			
+		
+		<style>
+			.footer {
+			  position: fixed;
+			  left: 0;
+			  bottom: 0;
+			  width: 100%;
+			  background-color: rgb(9, 0, 14);
+			  color: white;
+			  text-align: center;
+			}
+			</style>
+			
+			<div class="footer">
+			  <p><center>Data Incites : Data Bootcamp U of T | Github: @bnbullock, @NENUKORAH, @aobasuyi, @ftrbrum</center></p>
+			</div>
+	
+	</div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
+
+    
+
+    
+
+    
+        
+
+    
